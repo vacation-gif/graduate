@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: dev_ww
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie_info?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: movieTest
+
+es:
+  index: movie_test
